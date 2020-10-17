@@ -9,5 +9,148 @@ License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  GaslampChildTheme
 */
+#main-header {
+  background: black;
+}
 
-/* Write here your own personal stylesheet */
+.mobile_menu_bar::before {
+  color: white;
+}
+
+.et-fixed-header #et-top-navigation #menu-item-23890 a,
+li#menu-item-23890 a {
+  display: block;
+  border-radius: 6px;
+  border: 1px solid #7094de;
+  color: red !important;
+  font-weight: bold !important;
+  padding: 3px !important;
+}
+
+/*  Directory Stuff  */
+#wpbdp-listings-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#wpbdp-listings-list > div {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  #wpbdp-listings-list > div {
+    width: 48%;
+  }
+}
+
+.listing-title,
+.wpbdp-listing .listing-title a,
+.wpbdp-listing .listing-title h2 {
+  margin-top: 10px;
+  display: block;
+  color: black !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+}
+
+.wpbdp-listing .listing-title {
+  border-bottom: none !important;
+  text-align: center !important;
+}
+
+.wpbdp-listing-excerpt {
+  padding: 10px 20px 20px 20px;
+  border-bottom: none !important;
+  border-radius: 4px;
+  clear: both;
+  background-color: #eee !important;
+}
+
+.wpbdp-listing .address-info span.address-label {
+  display: none !important;
+}
+
+.wpbdp-listing .listing-thumbnail {
+  float: none !important;
+}
+
+.wpbdp-listing .listing-thumbnail img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.wpbdp-listing .listing-details {
+  margin-left: 0px !important;
+}
+
+.wpbdp-listing-excerpt.even,
+.wpbdp-listing-excerpt.odd {
+  background: #eee;
+}
+
+.listing-actions a.button {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: white !important;
+  border-radius: 4px !important;
+  padding: 7px 36px !important;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: none !important;
+}
+
+.wpbdp-listing .listing-actions {
+  text-align: center;
+}
+
+.page-id-22281 .et_pb_fullwidth_header,
+.home .et_pb_fullwidth_header {
+  padding-top: 60px;
+  min-height: 650px;
+}
+
+.home .et_pb_fullwidth_header .header-content h1,
+.home .et_pb_fullwidth_header .header-content p {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px #123d70;
+}
+
+.home .et_pb_fullwidth_header .header-content h1,
+.home .et_pb_fullwidth_header .header-content p {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px #123d70;
+}
+
+.et_pb_fullwidth_menu .et_pb_menu__menu,
+.et_pb_fullwidth_menu .et_pb_menu__menu > nav,
+.et_pb_fullwidth_menu .et_pb_menu__menu > nav > ul,
+.et_pb_menu .et_pb_menu__menu,
+.et_pb_menu .et_pb_menu__menu > nav,
+.et_pb_menu .et_pb_menu__menu > nav > ul {
+  text-transform: uppercase;
+}
+
+.page-id-23525 .et_pb_text.et_pb_module.et_pb_bg_layout_light {
+  margin-bottom: 100px !important;
+}
+
+.address-info {
+  line-height: 19px;
+}
+
+.wpbdp-field-display span.value a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: underline;
+}
