@@ -9,8 +9,8 @@ License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  GaslampChildTheme
 */
-.current-menu-item {
-  border-top: 2px solid white;
+.current-menu-item > a {
+  color: rgba(255, 0, 0, 0.685);
 }
 
 #main-header {
