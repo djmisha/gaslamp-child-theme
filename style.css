@@ -10,7 +10,7 @@ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  GaslampChildTheme
 */
 .current-menu-item > a {
-  color: rgba(255, 0, 0, 0.685);
+  color: rgba(255, 0, 0, 0.685) !important;
 }
 
 #main-header {
