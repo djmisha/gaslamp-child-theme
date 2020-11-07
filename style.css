@@ -156,7 +156,7 @@ li#menu-item-23890 a {
 }
 
 .wpbdp-field-association-category:before {
-  content: 'Category: ';
+  content: "Category: ";
 }
 
 .wpbdp-field-association-category span.value a {
@@ -189,6 +189,16 @@ li#menu-item-23890 a {
 .wpbdp-main-box .submit-btn input[type="submit"] {
   background: none;
   border: 1px solid #ccc;
+}
+
+.home .wpbdp-main-box .submit-btn input[type="submit"] {
+  background: none;
+  color: white !important;
+  border: 1px solid #ccc;
+}
+
+.home .advanced-search-link {
+  display: none;
 }
 
 .advanced-search-link {
