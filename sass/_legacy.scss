@@ -129,12 +129,55 @@ li#menu-item-23890 a {
     margin-bottom: 100px !important;
 }
 
+
+
+
+/* Directory Styles */
+
+.wpbdp-field-type-url span.value a {
+    color: #57aaf2 !important;
+    text-decoration: underline;
+} 
+
+.wpbdp-field-association-category {
+    &:before {
+        content: 'Category: ';
+    }
+}
+
+.wpbdp-field-association-category span.value a {
+    color:black !important;
+    font-weight: normal !important;
+    text-decoration: underline;
+} 
+
+.wpbdp-field-display span.value a {
+    font-weight: normal !important;
+}
+
+.back-to-dir-buttons input {
+    display: none;
+}
+
+.excerpt-content {
+    text-align: center;
+}
+
 .address-info {
     line-height: 19px;
 }
 
-.wpbdp-field-display span.value a {
-    font-weight: bold;
-    color: #000;
-    text-decoration: underline;
+.wpbdp-main-box .box-col input {
+    padding: 16px;
+    font-size: 18px;
 }
+
+.wpbdp-main-box .submit-btn input[type="submit"] {
+    background: none;
+    border: 1px solid #ccc;
+}
+
+.advanced-search-link {
+    display: none;
+}
+    

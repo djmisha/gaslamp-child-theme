@@ -28,3 +28,16 @@ if ( ! function_exists( 'suffice_child_enqueue_child_styles' ) ) {
 add_action( 'wp_enqueue_scripts', 'GaslampChildTheme_enqueue_child_styles' );
 
 /*Write here your own functions */
+
+
+// function GaslampChildTheme_enqueue_child_scripts() {
+// 	// loading custom js files
+// 	wp_register_script(
+// 		'child-scripts-custom', 
+// 		get_stylesheet_directory_uri() . 'scripts/custom.js'
+// 	);
+// 	wp_engueue_script('child-scripts-custom');
+// }
+
+// add_action('wp_engueue_script', 'GaslampChildTheme_enqueue_child_scripts');
+
