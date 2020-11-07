@@ -151,7 +151,7 @@ li#menu-item-23890 a {
 
 /* Directory Styles */
 .wpbdp-field-type-url span.value a {
-  color: #57aaf2 !important;
+  color: rgba(94, 189, 252, 0.945) !important;
   text-decoration: underline;
 }
 
