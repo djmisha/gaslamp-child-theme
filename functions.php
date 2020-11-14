@@ -8,36 +8,37 @@ Note: this function loads the parent stylesheet before, then child theme stylesh
 (leave it in place unless you know what you are doing.)
 */
 
-if ( ! function_exists( 'suffice_child_enqueue_child_styles' ) ) {
-	function GaslampChildTheme_enqueue_child_styles() {
-	    // loading parent style
-	    wp_register_style(
-	      'parente2-style',
-	      get_template_directory_uri() . '/style.css'
-	    );
+if (! function_exists('suffice_child_enqueue_child_styles')) {
+    function GaslampChildTheme_enqueue_child_styles()
+    {
+        // loading parent style
+        wp_register_style(
+            'parente2-style',
+            get_template_directory_uri() . '/style.css'
+        );
 
-	    wp_enqueue_style( 'parente2-style' );
-	    // loading child style
-	    wp_register_style(
-	      'childe2-style',
-	      get_stylesheet_directory_uri() . '/style.css'
-	    );
-	    wp_enqueue_style( 'childe2-style');
-	 }
+        wp_enqueue_style('parente2-style');
+        // loading child style
+        wp_register_style(
+            'childe2-style',
+            get_stylesheet_directory_uri() . '/style.css'
+        );
+        wp_enqueue_style('childe2-style');
+    }
 }
-add_action( 'wp_enqueue_scripts', 'GaslampChildTheme_enqueue_child_styles' );
+add_action('wp_enqueue_scripts', 'GaslampChildTheme_enqueue_child_styles');
 
 /*Write here your own functions */
 
 
-// function GaslampChildTheme_enqueue_child_scripts() {
-// 	// loading custom js files
-// 	wp_register_script(
-// 		'child-scripts-custom', 
-// 		get_stylesheet_directory_uri() . 'scripts/custom.js'
-// 	);
-// 	wp_engueue_script('child-scripts-custom');
-// }
+function GaslampChildTheme_enqueue_child_scripts()
+{
+    // loading custom js files
+    wp_register_script(
+        'child-scripts-custom',
+        get_stylesheet_directory_uri() . 'js/scripts.js'
+    );
+    wp_engueue_script('child-scripts-custom');
+}
 
-// add_action('wp_engueue_script', 'GaslampChildTheme_enqueue_child_scripts');
-
+add_action('wp_engueue_script', 'GaslampChildTheme_enqueue_child_scripts');
