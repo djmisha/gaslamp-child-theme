@@ -57,7 +57,11 @@ li#menu-item-23890 a {
     background-color: #eee !important;
 }
 
-.wpbdp-listing .address-info span.address-label {
+.wpbdp-listing .address-info a {
+    text-decoration: underline !important;
+}
+
+ .address-info span.address-label {
     display: none !important;
 }
 
@@ -188,3 +192,5 @@ li#menu-item-23890 a {
 .advanced-search-link {
     display: none;
 }
+
+
