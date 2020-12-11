@@ -26,17 +26,18 @@ makePhoneNumberClickable();
 
 function makeAddressClickable() {
     let addresses = document.querySelectorAll('.wpbdp-field-business_address');
-    for (let i = 0; i < addresses.length; i++) {
-        
-        let mapPath = "https://www.google.com/maps?";
-        const singleAddress = addresses[i];
-        singleAddress.replace(' ', '+')
-        mapPath += singleAddress;
-
-        let clickToMapElement = document.createElement('a');
-        clickToMapElement.setAttribute('href', mapPath);
-        clickToMapElement.innerHTML(addresses[i]);
-        addresses[i].appendChild(clickToMapElement);
+    if(addresses) {
+        for (let i = 0; i < addresses.length; i++) {
+            let mapPath = "https://www.google.com/maps?";
+            const singleAddress = addresses[i];
+            singleAddress.replace(' ', '+')
+            mapPath += singleAddress;
+            
+            let clickToMapElement = document.createElement('a');
+            clickToMapElement.setAttribute('href', mapPath);
+            clickToMapElement.innerHTML(addresses[i]);
+            addresses[i].appendChild(clickToMapElement);
+        }
     }
 }
 
