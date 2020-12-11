@@ -12,15 +12,32 @@ var makePhoneNumberClickable = function() {
             single.replace(' ','');
             single.replace('-','');
 
-            console.log(single);
-
-            let element = document.createElement('a');
-            element.setAttribute('href', makePhoneNumberClickable);
-            element.innerHTML(single);
-            
+            let clickPhone = document.createElement('a');
+            clickPhone.setAttribute('href', single);
+            clickPhone.innerHTML(phoneNumbers[i]);
+            phoneNumbers[i].innerHTML(clickPhone);
         }
     }
 } 
 
 
 makePhoneNumberClickable();
+
+
+function makeAddressClickable() {
+    let addresses = document.querySelectorAll('.wpbdp-field-business_address');
+    for (let i = 0; i < addresses.length; i++) {
+        
+        let mapPath = "https://www.google.com/maps?";
+        const singleAddress = addresses[i];
+        singleAddress.replace(' ', '+')
+        mapPath += singleAddress;
+
+        let clickToMapElement = document.createElement('a');
+        clickToMapElement.setAttribute('href', mapPath);
+        clickToMapElement.innerHTML(addresses[i]);
+        addresses[i].appendChild(clickToMapElement);
+    }
+}
+
+makeAddressClickable();
