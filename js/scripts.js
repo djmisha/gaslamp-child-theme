@@ -5,6 +5,7 @@ var makePhoneNumberClickable = function() {
     var phoneNumbers = document.querySelectorAll('.wpbdp-field-business_phone_number span');
     if(phoneNumbers) {
         for (let i = 0; i < phoneNumbers.length; i++) {
+            // Sanitize the Phone number
             var phoneLink = "tel:+1";
             phoneLink += phoneNumbers[i].innerText;
             phoneLink = phoneLink.split('(').join('');
@@ -12,7 +13,7 @@ var makePhoneNumberClickable = function() {
             phoneLink = phoneLink.split(' ').join('');
             phoneLink = phoneLink.split('—').join('');
             phoneLink = phoneLink.split('-').join('');
-
+            // Create Markup
             var phoneEl = document.createElement('a');
             phoneEl.setAttribute('href', phoneLink);
             phoneEl.classList.add('dr-click-phone');
@@ -41,11 +42,10 @@ function makeAddressClickableCategoryPage() {
             singleAddy = singleAddy.split(',').join('');
             singleAddy = singleAddy.split('.').join('');
             singleAddy = singleAddy.replace(/(\r\n|\n|\r)/gm, "");
-
-            singleAddy = singleAddy.replace('(', '');
-            singleAddy = singleAddy.replace(')', '');
+            singleAddy = singleAddy.split('(').join('');
+            singleAddy = singleAddy.split(')').join('');
             mapPath += singleAddy;
-
+            // Create Markup
             var addyEl = document.createElement('a');
             addyEl.setAttribute('href', mapPath);
             addyEl.setAttribute('target', '_blank');
@@ -64,7 +64,7 @@ makeAddressClickableCategoryPage();
 
 function makeAddressClickableSinglePage() {
     var addresses = document.querySelectorAll('.wpbdp-field-business_address');
-    var venueName = document.querySelectorAll('.listing-title h2');
+    var venueName = document.querySelectorAll('.listing-title');
     
     if(addresses) {
         for (let i = 0; i < addresses.length; i++) {
@@ -75,11 +75,11 @@ function makeAddressClickableSinglePage() {
             singleAddy = singleAddy.split(',').join('');
             singleAddy = singleAddy.split('.').join('');
             singleAddy = singleAddy.replace(/(\r\n|\n|\r)/gm, "");
-
-            singleAddy = singleAddy.replace('(', '');
-            singleAddy = singleAddy.replace(')', '');
+            singleAddy = singleAddy.split('(').join('');
+            singleAddy = singleAddy.split(')').join('');
             mapPath += singleAddy;
 
+            // Create Markup
             var addyEl = document.createElement('a');
             addyEl.setAttribute('href', mapPath);
             addyEl.setAttribute('target', '_blank');
