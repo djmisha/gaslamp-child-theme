@@ -18,12 +18,14 @@ li#menu-item-23890 a {
 
 /*  Directory Stuff  */
 
-.wpbdp-listing .excerpt-content .listing-thumbnail {
-    width: auto !important;
-}
 
-.wpbdp-listing .excerpt-content .listing-thumbnail img {
-	max-width: none !important;
+#wpbdp-listings-list {
+    .wpbdp-listing .listing-thumbnail {
+        width: auto !important;
+    }
+    .wpbdp-listing .listing-thumbnail img {
+        max-width: none !important;
+    }
 }
 
 #wpbdp-listings-list {
