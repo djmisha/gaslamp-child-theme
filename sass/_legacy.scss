@@ -18,6 +18,10 @@ li#menu-item-23890 a {
 
 /*  Directory Stuff  */
 
+.wpbdp-listing .listing-thumbnail img {
+	max-width: none !important;
+}
+
 #wpbdp-listings-list {
     display: flex;
     flex-wrap: wrap;
@@ -135,10 +139,12 @@ li#menu-item-23890 a {
 
 /* Directory Styles */
 
+a.dr-click-phone,
+.wpbdp-field-type-url,
+.wpbdp-field-association-category,
 a.dr-click-addy {
     color: black;
     &:before {
-        content: "\f3c5";
         font-family: "Font Awesome 5 Free";
         display: inline-block;
         font-style: normal;
@@ -148,6 +154,11 @@ a.dr-click-addy {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         margin-right: 5px;
+}
+
+a.dr-click-addy {
+    &:before {
+        content: "\f3c5";
     }
 }
 
@@ -155,45 +166,18 @@ a.dr-click-phone {
     color: black;
     &:before {
         content: "\f095";
-        font-family: "Font Awesome 5 Free";
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        margin-right: 5px;
     }
 }
 
 .wpbdp-field-type-url {
     &:before {
         content: "\f0c1";
-        font-family: "Font Awesome 5 Free";
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        margin-right: 5px;
     }
 }
 
 .wpbdp-field-association-category {
     &:before {
         content: "\f02c";
-        font-family: "Font Awesome 5 Free";
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        margin-right: 5px;
     }
 }
 
