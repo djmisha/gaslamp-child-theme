@@ -19,7 +19,7 @@ li#menu-item-23890 a {
 /*  Directory Stuff  */
 
 
-#wpbdp-listings-list {
+.page-template-default {
     .wpbdp-listing .listing-thumbnail {
         width: auto !important;
     }
@@ -160,6 +160,7 @@ a.dr-click-addy {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         margin-right: 5px;
+    }
 }
 
 a.dr-click-addy {
